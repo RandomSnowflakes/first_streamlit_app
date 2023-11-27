@@ -48,5 +48,5 @@ fruit_choice_2 = streamlit.text_input('What fruit would you like to add?','Banan
 streamlit.write('Thanks for adding ', fruit_choice_2)
 fruityvice_response_2 = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice_2)
 
-my_cur.execute(insert into fruit_load_list values('from fruit');
+my_cur.execute("insert into fruit_load_list values('from streamlit fruit')");
 
